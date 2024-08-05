@@ -70,7 +70,7 @@ int main()
     printf("The total amount remaining to achieve your goal is:\n");
     save= tot_amount-goal;
     printf("The total amount remaining to achieve your goal is %d:\n",save);
-    if(save<0)
+    if(save<=0)
     {
         printf("Great! You have achieved the goal.");
     }
