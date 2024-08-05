@@ -43,6 +43,7 @@ int main()
     tot_amount=tot_amount + dep_amount;
     if(dep_amount<0 ){
         printf("Invalid amount");
+        return 0;
     }else{
         printf("\n\nTotal amount remaining in this account: %d",tot_amount);
     }
@@ -69,9 +70,9 @@ int main()
     printf("The total amount remaining to achieve your goal is:\n");
     save= tot_amount-goal;
     printf("The total amount remaining to achieve your goal is %d:\n",save);
-    if(save,0)
+    if(save<0)
     {
-        printf("Great! You have achieved the goal.")
+        printf("Great! You have achieved the goal.");
     }
     
 
